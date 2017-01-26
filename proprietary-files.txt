@@ -335,3 +335,10 @@ etc/firmware/wcnss.mdt
 
 # Nfc
 vendor/firmware/libpn547_fw.so
+
+# Keymaster
+vendor/firmware/keymaster/keymaster.b00
+vendor/firmware/keymaster/keymaster.b01
+vendor/firmware/keymaster/keymaster.b02
+vendor/firmware/keymaster/keymaster.b03
+vendor/firmware/keymaster/keymaster.mdt
