@@ -1,0 +1,16 @@
+allow init self:capability sys_nice;
+#============= init ==============
+#allow init firmware_file:dir mounton;
+#allow init rootfs:dir relabelfrom;
+#============= init ==============
+#allow init asec_apk_file:dir mounton;
+#allow init cgroup:dir mounton;
+#allow init kernel:security setcheckreqprot;
+#allow init socket_device:sock_file create;
+#allow init sysfs_battery_supply:file getattr;
+#allow init system_data_file:dir mounton;
+#allow init system_file:dir mounton;
+#allow init system_file:file execute_no_trans;
+#============= init ==============
+allow init firmware_file:dir mounton;
+allow init rootfs:dir relabelfrom;

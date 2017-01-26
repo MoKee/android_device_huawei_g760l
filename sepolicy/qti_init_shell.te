@@ -1,0 +1,2 @@
+allow qti_init_shell storage_file:dir { getattr search };
+
