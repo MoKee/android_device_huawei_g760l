@@ -191,7 +191,7 @@ PRODUCT_PACKAGES += \
     libhw_cutils \
     libhw_gui \
     libhw_log \
-    libshim_qcopt.so
+    libshim_qcopt
 
 # Thermal
 PRODUCT_PACKAGES += \
