@@ -1,7 +1,11 @@
 [
   {
-    "repository": "android_kernel_huawei_msm8928",
-    "target_path": "kernel/huawei/msm8928"
+    "repository": "android_kernel_huawei_msm8x28",
+    "target_path": "kernel/huawei/msm8x28"
+  },
+  {
+    "repository": "android_vendor_huawei_g760l",
+    "target_path": "vendor/huawei/g760l"
   },
   {
     "repository": "android_external_sony_boringssl-compat",
@@ -10,7 +14,7 @@
   {
     "repository": "android_device_qcom_common",
     "target_path": "device/qcom/common"
-  }
+  },
   {
     "repository": "android_vendor_nxp-nfc_opensource_frameworks",
     "target_path": "vendor/nxp-nfc/opensource/frameworks"
