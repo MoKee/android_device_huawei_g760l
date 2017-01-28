@@ -251,8 +251,6 @@
         <ctl name="RX2 MIX1 INP1" value="RX2" />
         <ctl name="RX3 Digital Volume" value="96" />
         <ctl name="SPK DAC Switch" value="1" />
-        <ctl name="SPK DRV Volume" value="100" />
-        <ctl name="COMP0 Switch" value="1" />
         <!-- <path name="low-latency-playback" /> -->
         <path name="low-latency-playback" />
     </path>
