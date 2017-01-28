@@ -241,6 +241,36 @@
         <ctl name="SLIMBUS_0_RX Audio Mixer MultiMedia5" value="1" />
     </path>
 
+<!-- add -->
+    <path name="low-latency-playback speaker-and-headphones">
+        <!-- <path name="speaker" /> -->
+        <ctl name="SLIM RX1 MUX" value="AIF1_PB" />
+        <ctl name="SLIM RX2 MUX" value="AIF1_PB" />
+        <ctl name="SLIM_0_RX Channels" value="Two" />
+        <ctl name="RX1 MIX1 INP1" value="RX1" />
+        <ctl name="RX2 MIX1 INP1" value="RX2" />
+        <ctl name="RX3 Digital Volume" value="96" />
+        <ctl name="SPK DAC Switch" value="1" />
+        <ctl name="SPK DRV Volume" value="100" />
+        <ctl name="COMP0 Switch" value="1" />
+        <!-- <path name="low-latency-playback" /> -->
+        <path name="low-latency-playback" />
+    </path>
+
+    <path name="deep-buffer-playback speaker-and-headphones">
+        <!-- <path name="speaker" /> -->
+        <ctl name="SLIM RX1 MUX" value="AIF1_PB" />
+        <ctl name="SLIM RX2 MUX" value="AIF1_PB" />
+        <ctl name="SLIM_0_RX Channels" value="Two" />
+        <ctl name="RX1 MIX1 INP1" value="RX1" />
+        <ctl name="RX2 MIX1 INP1" value="RX2" />
+        <ctl name="RX3 Digital Volume" value="96" />
+        <ctl name="SPK DAC Switch" value="1" />
+        <!-- <path name="deep-buffer-playback" /> -->
+        <path name="deep-buffer-playback" />
+    </path>
+<!-- add end -->
+
     <path name="low-latency-playback bt-sco">
         <ctl name="INTERNAL_BT_SCO_RX Audio Mixer MultiMedia5" value="1" />
     </path>
@@ -360,6 +390,15 @@
         <path name="voice-call" />
         <ctl name="RX3 Digital Volume" value="92" />
     </path>
+
+<!-- add voice2-call voice-speaker -->
+    <path name="voice2-call voice-speaker">
+<!--         <path name="voice2-call" /> -->
+        <ctl name="SLIM_0_RX_Voice Mixer Voice2" value="1" />
+        <ctl name="Voice2_Tx Mixer SLIM_0_TX_Voice2" value="1" />
+        <ctl name="RX3 Digital Volume" value="92" />
+    </path>
+<!-- add end -->
 
     <path name="voice-call bt-sco">
         <ctl name="INTERNAL_BT_SCO_RX_Voice Mixer CSVoice" value="1" />
