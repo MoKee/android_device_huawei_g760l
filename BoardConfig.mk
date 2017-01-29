@@ -132,6 +132,9 @@ BOARD_UMS_LUNFILE=/sys/devices/platform/msm_hsusb/gadget/lun0/file
 # Release tools
 TARGET_RELEASETOOLS_EXTENSIONS := device/huawei/g760l
 
+# FM
+TARGET_QCOM_NO_FM_FIRMWARE := true
+
 # SELinux
 -include device/qcom/sepolicy/sepolicy.mk
 BOARD_SEPOLICY_DIRS += device/huawei/g760l/sepolicy

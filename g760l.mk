@@ -77,6 +77,11 @@ PRODUCT_PACKAGES += \
     quipc.conf \
     sap.conf
 
+# FM
+PRODUCT_PACKAGES += \
+    FMRadio \
+    libfmjni
+
 # Init
 PRODUCT_PACKAGES += \
     fstab.qcom \
