@@ -133,6 +133,7 @@ BOARD_UMS_LUNFILE=/sys/devices/platform/msm_hsusb/gadget/lun0/file
 TARGET_RELEASETOOLS_EXTENSIONS := device/huawei/g760l
 
 # FM
+BOARD_HAVE_QCOM_FM := true
 TARGET_QCOM_NO_FM_FIRMWARE := true
 
 # SELinux
