@@ -169,11 +169,11 @@ vendor/lib/librpmb.so
 vendor/lib/libssd.so
 
 # Widevine
-#etc/firmware/widevine.b00
-#etc/firmware/widevine.b01
-#etc/firmware/widevine.b02
-#etc/firmware/widevine.b03
-#etc/firmware/widevine.mdt
+etc/firmware/widevine.b00
+etc/firmware/widevine.b01
+etc/firmware/widevine.b02
+etc/firmware/widevine.b03
+etc/firmware/widevine.mdt
 vendor/lib/drm/libdrmwvmplugin.so
 vendor/lib/libwvdrm_L1.so
 vendor/lib/libwvm.so
