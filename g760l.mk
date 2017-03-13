@@ -90,7 +90,8 @@ PRODUCT_PACKAGES += \
     ueventd.qcom.rc \
     init.qcom.ril.sh \
     init.target.rc \
-    init.huawei.rc
+    init.huawei.rc \
+    init.qcom.sh
 
 # IPv6 tethering
 PRODUCT_PACKAGES += \

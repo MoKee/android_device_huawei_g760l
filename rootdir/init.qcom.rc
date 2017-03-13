@@ -488,11 +488,14 @@ service ril-daemon3 /system/bin/rild -c 3
 #add for dsda end
 
 #add some fix
-service qcom-post-boot /system/bin/sh /system/etc/init.qcom.post_boot.sh
+service charger_monitor /system/bin/charger_monitor qpnp_charger 1100000 63
+    user system
+    group system
+    disabled
+
+service qcom-sh /system/bin/sh /init.qcom.sh
     class late_start
     user root
-    disabled
     oneshot
 
-on property:sys.boot_completed=1
-    start qcom-post-boot
+#add end
