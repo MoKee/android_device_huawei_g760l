@@ -292,6 +292,9 @@ vendor/lib/libxml.so
 # Quick charge
 bin/hvdcp
 
+#Charger monitor
+bin/charger_monitor
+
 # Sensors
 bin/sensors.qcom
 vendor/lib/hw/sensors.msm8226.so
