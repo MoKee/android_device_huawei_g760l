@@ -61,30 +61,20 @@ mmp.enable.3g2=true
 ro.vendor.extension_library=/vendor/lib/libqc-opt.so
 
 # Radio
-rild.libpath=/vendor/lib/libril-qc-qmi-1.so
-rild.libargs=-d /dev/smd0
-persist.rild.nitz_plmn=
-persist.rild.nitz_long_ons_0=
-persist.rild.nitz_long_ons_1=
-persist.rild.nitz_long_ons_2=
-persist.rild.nitz_long_ons_3=
-persist.rild.nitz_short_ons_0=
-persist.rild.nitz_short_ons_1=
-persist.rild.nitz_short_ons_2=
-persist.rild.nitz_short_ons_3=
-ril.subscription.types=NV,RUIM
 persist.data.netmgrd.qos.enable=true
-persist.data.qmi.adb_logmask=0
 persist.radio.apm_sim_not_pwdn=1
-persist.radio.dont_use_dsd=true
+persist.radio.force_nw_search=1
 persist.radio.msgtunnel.start=false
-persist.radio.multisim.config=dsds
-persist.radio.rat_on=combine
+ril.subscription.types=NV,RUIM
+rild.libargs=-d /dev/smd0
+rild.libpath=/vendor/lib/libril-qc-qmi-1.so
 ro.hwpp.cust_ons_bin=true
 ro.telephony.call_ring.multiple=false
-ro.telephony.ril.config=simactivation
-telephony.lteOnGsmDevice=1
 ro.telephony.default_network=10
+ro.use_data_netmgrd=true
+telephony.lteOnGsmDevice=1
+ro.telephony.ril.config=simactivation
+persist.radio.multisim.config=dsds
 
 # Sensors
 ro.qualcomm.sensors.smd=true
