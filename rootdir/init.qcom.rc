@@ -265,9 +265,6 @@ on property:dev.bootcomplete=1
     setprop sys.io.scheduler "bfq"
     start mpdecision
 
-on property:sys.boot_completed=1
-    write /dev/kmsg "Boot completed "
-
 on enable-low-power
     write /sys/devices/system/cpu/cpu1/online 1
     write /sys/devices/system/cpu/cpu2/online 1
@@ -325,12 +322,13 @@ service config_bluetooth /system/bin/sh /system/etc/init.qcom.bt.sh "onboot"
     user root
     oneshot
 
+# Only start the service on MT2
 #start GNSS/Sensor interface daemon
-service gsiff_daemon /system/bin/gsiff_daemon
-    class late_start
-    user gps
-    group gps net_raw misc
-    disabled
+#service gsiff_daemon /system/bin/gsiff_daemon
+#    class late_start
+#    user gps
+#    group gps net_raw misc
+#    disabled
 
 service hciattach /system/bin/sh /system/etc/init.qcom.bt.sh
     class late_start
