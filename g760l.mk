@@ -217,6 +217,10 @@ PRODUCT_PACKAGES += \
     wpa_supplicant.conf \
     wpa_supplicant_overlay.conf
 
+# Storage
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.sys.sdcardfs=true
+
 $(call inherit-product,frameworks/native/build/phone-xhdpi-1024-dalvik-heap.mk)
 
 # inherit from the non-open-source side, if present
